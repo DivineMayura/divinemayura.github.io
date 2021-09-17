@@ -24,7 +24,11 @@ body {
     
 }
 
-
+figure {
+    border-radius: 10px;
+    border-radius: 10%;
+    border-image: 10%;
+}
 
 h3 {
     padding: 10px;
@@ -48,7 +52,8 @@ div {
     position:relative;
     z-index: 2;
     display:flex;
-    color: hotpink;;
+    color: hotpink;
+    text-shadow: 2 2 4 tomato;
 }
 #wordyName {
     background-color: transparent;
@@ -60,13 +65,20 @@ div {
     display:flex;
     flex: 1 1 100;
     z-index: 1;
-    filter:saturate(200%);
-    filter:brightness(200%);
-    filter:contrast(150%);
+    /* filter:saturate(200%) brightness(200%) contrast(150%); */
     margin-top: -30px;
 }
 
+aside {
+    position:fixed;
+    justify-content: right;
+    
+}
+
 nav {
+    background-color:slategray;
+    height:60px;
+    width: 400px;
     position:relative;
     top:auto;
     display:flex;
@@ -80,33 +92,20 @@ nav {
     display:flex;
     flex-direction: row;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 #myWork {
     display:flex;
     flex-wrap: wrap;
     width: 200px;
     justify-content: center;
+    flex-direction: row;
+    margin-bottom: 200px;
 }
 
-#mainBox img {
-    object-fit: cover;
-    width: 800px;
-    height: 200px;
-    filter:contrast(150%) brightness(200%);
-}
-
-.fourBoxes img {
-    object-fit: cover;
-    width: 900px;
-    height: 200px;
-    filter:blur(1px) brightness(200%);
-}
-article .workText {
+.workBox {
     justify-content: right;
-}
-.fourBoxes {
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 article {
@@ -115,6 +114,40 @@ article {
     padding: 10px;
     margin: 20px;
 }
+
+article .workText {
+    justify-content: right;
+}
+
+#mainBox img {
+    object-fit: cover;
+    width: 900px;
+    height: 200px;
+    filter:contrast(150%) brightness(200%);
+}
+
+.fourBoxes img {
+    object-fit: cover;
+    width: 700px;
+    height: 200px;
+    filter:blur(1px) brightness(200%);
+}
+
+.fourBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#workTwo img {
+
+    filter:contrast(150%) brightness(120%) saturate(100%);
+}
+
+#workThree img {
+    filter:blur(1px) brightness(100%) contrast(100%) saturate(100%);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 footer {
     Background-color: black;
