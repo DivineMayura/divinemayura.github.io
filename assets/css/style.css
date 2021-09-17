@@ -1,32 +1,58 @@
 
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:aliceblue;
 }
 
 body {
+    width: 50%;
     align-items: center;
     display:flex;
     flex-direction:column;
-    justify-content:left;
+    background-color: slategray;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backgroundImage {
+    position:fixed;
+    z-index: -90;
+    filter:blur(1px) brightness(100%) saturate(200%) contrast(140%);
+    margin-top: -20px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+
+
+h3 {
+    padding: 10px;
+    margin: 10px;
 }
 
 header {
     flex-direction: row;
-    background-color:brown;
+    background-color:transparent;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
+div {
+    background-color: transparent;
+}
+
 #name {
     
     position:relative;
     z-index: 2;
     display:flex;
-    box-sizing:border-box;
-    color: hotpink;
-    box-sizing: border-box;
+    color: hotpink;;
 }
 #wordyName {
     background-color: transparent;
-
+    text-shadow: 2 2 4 tomato;
 }
 
 #codeBanner {
@@ -41,21 +67,58 @@ header {
 }
 
 nav {
-    
+    position:relative;
+    top:auto;
+    display:flex;
+    justify-content:initial;
 }
 
 
 #navBar {
-    position:fixed;
+    position:relative;
     top:auto;
     display:flex;
     flex-direction: row;
 }
 
+#myWork {
+    display:flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: center;
+}
+
+#mainBox img {
+    object-fit: cover;
+    width: 800px;
+    height: 200px;
+    filter:contrast(150%) brightness(200%);
+}
+
+.fourBoxes img {
+    object-fit: cover;
+    width: 900px;
+    height: 200px;
+    filter:blur(1px) brightness(200%);
+}
+article .workText {
+    justify-content: right;
+}
+.fourBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color:black;
+    box-shadow: 2 2 10px black;
+    padding: 10px;
+    margin: 20px;
+}
 
 footer {
     Background-color: black;
-    position: absolute;
+    position: fixed;
     display: flex;
     bottom:0;
 }
