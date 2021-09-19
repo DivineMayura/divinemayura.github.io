@@ -2,16 +2,24 @@
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+:root {
+    --box1: aliceblue;
+}
 
 body {
     width: 50%;
     align-items: center;
     display:flex;
     flex-direction:column;
-    background-color: slategray;
+    /* background-color: slategray; */
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(84,84,84,1) 21%, rgba(255,0,0,1) 52%, rgba(0,0,0,1) 82%);
+
+
 }
 
 #backgroundImage {
@@ -69,29 +77,29 @@ div {
     margin-top: -30px;
 }
 
-aside {
+/* aside {
+
+} */
+
+#navSection {
+    background-color:rgb(255, 0, 0);
+    height:60px;
+    width: 400px;
+    display:flex;
     position:fixed;
-    justify-content: right;
-    
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    justify-content: column;
+    flex: 1 0 200px;
 }
 
 nav {
-    background-color:slategray;
-    height:60px;
-    width: 400px;
-    position:relative;
-    top:auto;
-    display:flex;
-    justify-content:initial;
+    text-align: center;
 }
 
+container:
 
-#navBar {
-    position:relative;
-    top:auto;
-    display:flex;
-    flex-direction: row;
-}
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 #myWork {
@@ -109,7 +117,7 @@ nav {
 }
 
 article {
-    background-color:black;
+    background-color:var(--box1);
     box-shadow: 2 2 10px black;
     padding: 10px;
     margin: 20px;
@@ -150,7 +158,7 @@ article .workText {
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 footer {
-    Background-color: black;
+    Background-color: var(--box1);
     position: fixed;
     display: flex;
     bottom:0;
@@ -162,11 +170,11 @@ footer {
     color: aliceblue;
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     nav {
         position:fixed; 
         top: 0px;
     }
     
-}
+} */
 
