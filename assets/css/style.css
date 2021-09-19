@@ -3,7 +3,27 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root {
-    --box1: aliceblue;
+    --r: #FF7C79;
+    --bb: #71FFE3;
+    --lb: #7285B7;
+    --db: #002451;
+    --o: #FFC58F;
+    --g: #D1E58D;
+    --y: #F0EEAD;
+    --p: #EBBBFF;
+}
+
+a:visited {
+    color: var(--r);
+}
+a:hover {
+    color: var(--y);
+}
+a:link {
+    color: var(--p);
+}
+a:active {
+    color: var(--bb);
 }
 
 body {
@@ -16,13 +36,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(84,84,84,1) 21%, rgba(255,0,0,1) 52%, rgba(0,0,0,1) 82%);
-
+    background-color: var(--db);
+    /* background: rgb(255,255,255); */
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 
 }
 
-#backgroundImage {
+/* #backgroundImage {
     position:fixed;
     z-index: -90;
     filter:blur(1px) brightness(100%) saturate(200%) contrast(140%);
@@ -30,7 +50,15 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(84,84,84,1) 21
     display:flex;
     justify-content: center;
     
+} */
+header {
+    display:flex;
+    flex-direction: row;
+    background-color:transparent;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 
 figure {
     border-radius: 10px;
@@ -38,16 +66,17 @@ figure {
     border-image: 10%;
 }
 
+
 h3 {
     padding: 10px;
     margin: 10px;
 }
 
-header {
-    flex-direction: row;
-    background-color:transparent;
-    padding-left: 20px;
-    padding-right: 20px;
+
+body header section {
+    background-color: var(--lb);
+    padding: 10px;
+    text-align: center;
 }
 
 
@@ -81,51 +110,96 @@ div {
 
 } */
 
-#navSection {
-    background-color:rgb(255, 0, 0);
+#myWork a {
+
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 0 100px;
+
+}
+
+/* #navSection {
+
+    background-color: transparent;
     height:60px;
     width: 400px;
-    display:flex;
-    position:fixed;
-    right: 0;
-    top: 50%;
     bottom: 50%;
-    justify-content: column;
+    position:relative;
+    left: 0;
+    top: 50%;
+    justify-content: row;
     flex: 1 0 200px;
+    margin-bottom: -300px;
+    background-size: contain;
+
+}
+
+.navItem {
+    display:inline-block;
 }
 
 nav {
     text-align: center;
-}
+    margin-right: auto;
+    background-color: aliceblue;
+    margin-bottom: -300px;
+    margin-left: auto;
+    background-size: cover;
+} */
 
-container:
+
+
+/* .empty {
+    background-color:tomato;
+     visibility:none;
+     margin: 500px;
+} */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 #myWork {
     display:flex;
     flex-wrap: wrap;
+    flex: 1 0 40px;
     width: 200px;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 200px;
 }
 
-.workBox {
-    justify-content: right;
 
+#myWork #mainBox h3 {
+    position:relative;
+    right:10px;
+    top: 210px;
+    z-index: 20;
+    margin-right: 740px;
+    background-color: var(--lb);
+    box-shadow: 5px -5px 40px var(--lb);
+}
+
+#myWork .fourBoxes h3 {
+    position:relative;
+    right:20px;
+    top:220px;
+    z-index: 21;
+    margin-right: 75%;
+    background-color: var(--lb);
+    box-shadow: 5px -5px 40px var(--lb);
 }
 
 article {
-    background-color:var(--box1);
+    background-color:var(--lb);
     box-shadow: 2 2 10px black;
     padding: 10px;
     margin: 20px;
 }
 
+
 article .workText {
     justify-content: right;
 }
+
 
 #mainBox img {
     object-fit: cover;
@@ -134,6 +208,7 @@ article .workText {
     filter:contrast(150%) brightness(200%);
 }
 
+
 .fourBoxes img {
     object-fit: cover;
     width: 700px;
@@ -141,24 +216,28 @@ article .workText {
     filter:blur(1px) brightness(200%);
 }
 
+
 .fourBoxes {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 #workTwo img {
 
     filter:contrast(150%) brightness(120%) saturate(100%);
 }
 
+
 #workThree img {
     filter:blur(1px) brightness(100%) contrast(100%) saturate(100%);
 }
 
+
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 footer {
-    Background-color: var(--box1);
+    Background-color: var(--lb);
     position: fixed;
     display: flex;
     bottom:0;
