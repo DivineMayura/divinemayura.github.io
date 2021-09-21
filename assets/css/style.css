@@ -110,65 +110,57 @@ nav {
 
     text-align: center;
     margin-right: auto;
-    background-color: aliceblue;
+    background-color: var(--lb);
 }
 
 
 /* ---------------------------------------------------------------------------------------------------------- */
 
+
+
 #myWork {
     display:flex;
     flex-wrap: wrap;
-    /* align-content:center; */
     justify-content: center;
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* width: 40%; */
 }
 
-
-
-.workBox {
-    width: 40%;
-    display:flex;
-    flex: 0 0 50%;
+#myWork h2 {
+    position:relative;
+    text-align: center;
+    order:2;
 
 }
 
 #mainBox {
-    width: 100%;
+    order:2;
+    /* width: 100%; */
 }
-
-/* #myWork h2 {
-    text-align: center;
-} */
 
 #myWork #mainBox h3 {
     position:relative;
-    right:10px;
+    /* right:-20px; */
     top: 210px;
     z-index: 20;
-    /* margin-right: 740px; */
     background-color: var(--db);
     box-shadow: 5px -5px 40px var(--db);
-    /* margin-top: -20px; */
+    text-align: center;
 }
 
 #myWork .fourBoxes h3 {
+    order:3;
     position:relative;
-    right:20px;
-    top:220px;
+    /* right:20px; */
+    top:200px;
     z-index: 21;
-    /* margin-right: 75%; */
     background-color: var(--db);
     box-shadow: 5px -5px 40px var(--db);
+    text-align: center;
 }
 
 #myWork article {
     background-color:var(--db);
     box-shadow: 2 2 10px black;
     padding: 2px 5px 2px 5px;
-    /* margin: 2px 5px 2px 5px; */
 }
 
 
@@ -194,7 +186,6 @@ article .workText {
 }
 
 .fourBoxes article {
-    /* margin: 10% 10% 10% 5px; */
     flex: 1 0 200px;
 }
 
@@ -215,16 +206,15 @@ article .workText {
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* #contact {
+#contact {
+    position:relative;
 
-    margin-bottom: 200px;
-
-} */
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-footer {
+#foot {
     Background-color: var(--db);
     position: fixed;
     display: flex;
@@ -248,3 +238,11 @@ footer {
     
 }
 
+
+/* 
+
+
+( ͡👁️ ͜ʖ ͡👁️)
+
+
+ */
