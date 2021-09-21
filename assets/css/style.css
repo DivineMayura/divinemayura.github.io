@@ -30,37 +30,25 @@ p {
     color: var(--y);
 }
 
-h4  {
+header section h4  {
     color: var(--g);
 }
 
 
 
-body {
+/* body {
     width: 50%;
-    align-items: center;
     display:flex;
     flex-direction:column;
-    /* background-color: slategray; */
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-
     background-color: var(--lb);
-    /* background: rgb(255,255,255); */
-    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-
-}
-
-/* #backgroundImage {
-    position:fixed;
-    z-index: -90;
-    filter:blur(1px) brightness(100%) saturate(200%) contrast(140%);
-    margin-top: -20px;
-    display:flex;
-    justify-content: center;
+    align-content:center;
     
 } */
+
+
 header {
     display:flex;
     flex-direction: row;
@@ -79,7 +67,7 @@ figure {
 
 h3 {
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 
@@ -112,90 +100,58 @@ div {
 }
 
 
-/* aside {
 
-} */
+ #navSection {
+    align-content:center;
 
-
-/* #navSection {
-
-    background-color: transparent;
-    height:60px;
-    width: 400px;
-    bottom: 50%;
-    position:relative;
-    left: 0;
-    top: 50%;
-    justify-content: row;
-    flex: 1 0 200px;
-    margin-bottom: -300px;
-    background-size: contain;
-
-}
-
-.navItem {
-    display:inline-block;
 }
 
 nav {
+
     text-align: center;
     margin-right: auto;
     background-color: aliceblue;
-    margin-bottom: -300px;
-    margin-left: auto;
-    background-size: cover;
-} */
+}
 
 
-
-/* .empty {
-    background-color:tomato;
-     visibility:none;
-     margin: 500px;
-} */
-
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
-/* #workFlexBox {
-    display:flex;
-    flex-wrap: wrap;
-    flex: 1 0 100px;
-    align-content: center;
-} */
-
+/* ---------------------------------------------------------------------------------------------------------- */
 
 #myWork {
-
     display:flex;
     flex-wrap: wrap;
+    /* align-content:center; */
     justify-content: center;
-    flex-direction: row;
-    margin-bottom: 200px;
-    align-content: center;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* width: 40%; */
 }
 
 
 
 .workBox {
     width: 40%;
+    display:flex;
+    flex: 0 0 50%;
+
 }
 
 #mainBox {
     width: 100%;
 }
 
-#myWork h2 {
+/* #myWork h2 {
     text-align: center;
-}
+} */
 
 #myWork #mainBox h3 {
     position:relative;
     right:10px;
     top: 210px;
     z-index: 20;
-    margin-right: 740px;
+    /* margin-right: 740px; */
     background-color: var(--db);
     box-shadow: 5px -5px 40px var(--db);
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 #myWork .fourBoxes h3 {
@@ -203,16 +159,16 @@ nav {
     right:20px;
     top:220px;
     z-index: 21;
-    margin-right: 75%;
+    /* margin-right: 75%; */
     background-color: var(--db);
     box-shadow: 5px -5px 40px var(--db);
 }
 
-article {
+#myWork article {
     background-color:var(--db);
     box-shadow: 2 2 10px black;
     padding: 2px 5px 2px 5px;
-    margin: 2px 5px 2px 5px;
+    /* margin: 2px 5px 2px 5px; */
 }
 
 
@@ -238,7 +194,7 @@ article .workText {
 }
 
 .fourBoxes article {
-    margin: 10% 10% 10% 5px;
+    /* margin: 10% 10% 10% 5px; */
     flex: 1 0 200px;
 }
 
@@ -259,11 +215,11 @@ article .workText {
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-#contact {
+/* #contact {
 
     margin-bottom: 200px;
 
-}
+} */
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -284,27 +240,11 @@ footer {
 
 
 
-/* 
-
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     nav {
         position:fixed; 
         top: 0px;
     }
     
 }
-@media screen and (min-width: 375px){
-    nav {
-        position:fixed; 
-        top: 0px;
-    }
-    
-}
-@media screen and (min-width: 414px){
-    nav {
-        position:fixed; 
-        top: 0px;
-    }
-    
-} */
 
