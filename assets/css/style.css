@@ -306,10 +306,37 @@ footer {
     font-size: 1.25rem;
     color: var(--bb)
 }
-@media screen and (max-width: 768px){
-    nav {
-        position:fixed; 
-        top: 0px;
+
+
+
+
+@media screen and (max-width: 769px){
+
+    header {
+        flex-direction: column;
+    }
+
+    figure {
+        width: 80vw;
+    }
+
+    #title {
+        position:relative;
+        top: -20px;
+    }
+
+    #info {
+        position:relative;
+        top: -50px;
+    }
+
+    #aboutMe {
+        width: 80vw;
+    }
+
+    #navSection {
+        flex-direction: row;
+        height: 10vh;
     }
     
 }
