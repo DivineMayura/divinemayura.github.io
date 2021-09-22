@@ -338,7 +338,16 @@ footer {
         flex-direction: row;
         height: 10vh;
     }
+
+    #showcaseContainer {
+        width: 75vw;
+    }
     
+    #footerText {
+        font-size: 1rem;
+    }
+
+
 }
 
 
