@@ -48,32 +48,36 @@ header section h4  {
     
 } */
 
+body {
+    background: radial-gradient(circle, var(--bb), var(--lb))
+}
 
 header {
     display:flex;
-    flex-direction: row;
-    background-color:transparent;
-    padding-left: 20px;
-    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: 500px;
 }
 
 
 figure {
-    border-radius: 10px;
-    border-radius: 10%;
-    border-image: 10%;
+    width: 50vw;
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-h3 {
-    padding: 10px;
-    /* margin: 10px; */
+figure img {
+    width: 1000px;
+    margin: none;
+    object-fit: cover;
 }
-
 
 body header section {
     background-color: var(--db);
-    padding: 10px;
     text-align: center;
 }
 
@@ -83,153 +87,225 @@ div {
 }
 
 #name {
-    
-    position:relative;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 2;
     display:flex;
     color: hotpink;
     text-shadow: 2 2 4 tomato;
+    background: var(--db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--r);
+
 }
 #wordyName {
     background-color: transparent;
     text-shadow: 2 2 4 tomato;
 }
 
-#aboutMe p{
-    padding-right: 90px;
+#aboutMe {
+    width: 50vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+#title {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.75rem;
+}
 
-
- #navSection {
-    align-content:center;
-
+#info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#navSection {
+    flex: 1 1 25vh;
+    height: 35vh;
+    width: 90vw;
     text-align: center;
     margin-right: auto;
     background-color: var(--lb);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem {
+    flex: 1 1 35vh;
 }
 
 
 /* ---------------------------------------------------------------------------------------------------------- */
 
+#portfolio {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#showcaseContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: bold;
+}
 
 #myWork {
-    display:flex;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#myWork h2 {
-    position:relative;
-    text-align: center;
-    order:2;
-
-}
-
-#mainBox {
-    order:2;
-    /* width: 100%; */
-}
-
-#myWork #mainBox h3 {
-    position:relative;
-    /* right:-20px; */
-    top: 210px;
-    z-index: 20;
-    background-color: var(--db);
-    box-shadow: 5px -5px 40px var(--db);
+article {
     text-align: center;
 }
 
-#myWork .fourBoxes h3 {
-    order:3;
-    position:relative;
-    /* right:20px; */
-    top:200px;
-    z-index: 21;
-    background-color: var(--db);
-    box-shadow: 5px -5px 40px var(--db);
-    text-align: center;
+article h3 {
+    font-size: 1.3rem;
+    color: hotpink;
 }
 
-#myWork article {
-    background-color:var(--db);
-    box-shadow: 2 2 10px black;
-    padding: 2px 5px 2px 5px;
+#mainBoxContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80vw;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: var(--lb)
 }
-
-
-article .workText {
-    justify-content: right;
-}
-
-
 
 #mainBox img {
     object-fit: cover;
-    width: 900px;
+    width: 80vw;
     height: 200px;
     filter:contrast(150%) brightness(200%);
 }
 
+#fourBoxesContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
+    width: 100vw;
+    height: auto;
+}
+
+.fourBoxesBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 675px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    background: var(--lb)
+}
+
+/*
+.fourBoxesBox h3 {
+    width
+}
+*/
+
+.fourBoxes {
+    flex: 1 0 0px;
+    width: 650px;
+    height: 0px;
+    overflow: hidden;
+}
 
 .fourBoxes img {
     object-fit: cover;
-    width: 700px;
-    height: 200px;
-    filter:blur(1px) brightness(200%);
+    width: 650px;
+    height: 300px;
+    filter: blur(1px) brightness(200%);
+    border-radius: 10px;
 }
-
-.fourBoxes article {
-    flex: 1 0 200px;
-}
-
-.fourBoxes {
-    flex: 1 0 200px;
-}
-
 
 #workTwo img {
-
     filter:contrast(150%) brightness(120%) saturate(100%);
 }
-
 
 #workThree img {
     filter:blur(1px) brightness(100%) contrast(100%) saturate(100%);
 }
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
-
-#contact {
-    position:relative;
-
+footer {
+    width: 100vw;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    background: var(--lb);
 }
 
-
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
-
-#foot {
-    Background-color: var(--db);
-    position: fixed;
+#contactsSection {
     display: flex;
-    bottom: -9px;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 50px;
+}
+
+#contactsSection a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#finalInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 50px;
 }
 
 #footerText {
-    display:inline-flex;
-    background-color:transparent;
-    color: aliceblue;
+    font-size: 1.25rem;
+    color: var(--bb)
 }
-
-
-
-
 @media screen and (max-width: 768px){
     nav {
         position:fixed; 

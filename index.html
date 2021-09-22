@@ -15,108 +15,96 @@
     </div> -->
 
     <header>
-             <div id="name">
-                     <h1 id="wordyName"> May Faucher </h1>
-             </div>
-             <figure>
-                 <img src="assets/images/selfie1.jpg" alt="The individual named May">
-             </figure>
-             <hr/>
-             <section Id="aboutMe">
-                 <h4>About Me</h4>
-                <p> I'm currently a student enrolled within Berkeley Extension's coding bootcamp learning to code with no prior experience </p>
-             </section>
-             <hr/>
+        <div id="name">
+            <h1 id="wordyName"> May Faucher </h1>
+        </div>
+            <figure>
+                <img src="assets/images/selfie1.jpg" alt="The individual named May">
+            </figure>
+        <section Id="aboutMe">
+            <div>
+                <div id="title">
+                    <h4>About Me</h4>
+                </div>
+            </div>
+            <div id=info>
+                <p> I'm currently a student enrolled within Berkeley Extension's coding
+                    bootcamp learning to code with no prior experience.</p>
+            </div>
+        </section>
     </header>
     
     <!-- <aside>
      
     </aside> -->
-    <hr/>
     <!-- <section id="navSection"> -->
         
     <nav>
-        <section id="navSection">
-            <div class="navItem"><a href="#header"><h4>Top</h4></a></div>
-
-        <div class="navItem" class="empty"></div>
-
-            <div class="navItem"><a href="#aboutMe"><h4>About Me</h4></a></div>
-
-        <div class="navItem" class="empty"></div>
-
-            <div class="navItem"><a href="#myWork"><h4>My Work</h4></a></div>
-
-        <div class="navItem" class="empty"></div>
-
-            <div class="navItem"><a href="#contact"><h4>Contact</h4></a></div>
-        </section>
+        <ul id="navSection">
+            <li class="navItem"><a href="#header"><h4>Top</h4></a></li>
+            <li class="navItem"><a href="#aboutMe"><h4>About Me</h4></a></li>
+            <li class="navItem"><a href="#myWork"><h4>My Work</h4></a></li>
+            <li class="navItem"><a href="#contactsSecion"><h4>Contact</h4></a></li>
+        </ul>
     </nav>
         
     <!-- </section> -->
 
-    <hr/>
-
-    <main id="myWork">
-        <h2>Showcase</h2>
-
-        <article>
-            <a href="#" id="mainBox" class="workBox" >
-                <h3 class="workText">Code Stealer!</h3>
-                <img src="assets/images/codestealer.jpg" alt="Image of green text on a black background.">
-            </a>
-        </article>
-        
-        
-        <article>
-            <a href="https://divinemayura.github.io/landing-page/" class="fourBoxes">
-                <h3 class="workText">"Work One Placeholder"</h3>
-                <img src="assets/images/darkgreenleaves.jpg" alt="leaves covered in shadow.">
-            </a>
-        </article>
-
-        <article >
-            <a href="#" id="workTwo" class="fourBoxes">
-                <h3 class="workText">Work Two Placeholder</h3>
-                <img src="assets/images/treesinfield.jpg" alt="Image of trees in a field.">
-            </a>
-        </article>
-
-        <article>
-            <a href="#" id="workThree" class="fourBoxes">
-                <h3 class="workText">Work Three Placeholder</h3>
-                <img src="assets/images/beach.jpg" alt="Image of a beach.">
-            </a>
-        </article>
-
-
-        <article >
-            <a href="#" class="fourBoxes">
-                <h3 class="workText">Work Four Placeholder</h3>
-                <img src="assets/images/codestealer.jpg" alt="Image of green text on a black background.">
-            </a>
-        </article>
-
-    </main>
-
-    <section id="contact">
-        <article>
-            <a href="https://github.com/DivineMayura">GitHub</a>
-            <a href="www.linkedin.com/in/mayfaucher">Linkden</a>
-            <a href="#name">Top of Page</a>
-            <p>Email: DivineMayura@gmail.com</p>
-        </article>
-    </section>
-
-
-
- <div id="foot">
-    <footer>
-        <h5 id="footerText"> Made with ❤️ May Faucher! </h5>
-    </footer>
-</div>
+    <div id="portfolio">
+        <div id="showcaseContainer">
+            <h2>Showcase</h2>
+        </div>
+        <main id="myWork">
+            <!--mainbox-->
+            <div id="mainBoxContainer">
+                <article>
+                    <h3 class="workText">Code Stealer!</h3>
+                    <a href="https://divinemayura.github.io/landing-page/" target="_blank" id="mainBox">
+                        <img src="assets/images/codestealer.jpg" alt="Image of green text on a black background.">
+                    </a>
+                </article>
+            </div>
+            <!--fourboxes-->
+            <div id="fourBoxesContainer">
+                <article class="fourBoxesBox">
+                    <h3 class="workText">Work One Placeholder</h3>
+                    <a href="#" target="_blank" class="fourBoxes">
+                        <img src="assets/images/darkgreenleaves.jpg" alt="leaves covered in shadow.">
+                    </a>
+                </article>
+                <article  class="fourBoxesBox">
+                    <h3 class="workText">Work Two Placeholder</h3>
+                    <a href="#" target="_blank" id="workTwo" class="fourBoxes">
+                        <img src="assets/images/treesinfield.jpg" alt="Image of trees in a field.">
+                    </a>
+                </article>
+                <article  class="fourBoxesBox">
+                    <h3 class="workText">Work Three Placeholder</h3>
+                    <a href="#" target="_blank" id="workThree" class="fourBoxes">
+                        <img src="assets/images/beach.jpg" alt="Image of a beach.">
+                    </a>
+                </article>
+                <article  class="fourBoxesBox">
+                    <h3 class="workText">Work Four Placeholder</h3>
+                    <a href="#" target="_blank" class="fourBoxes">
+                        <img src="assets/images/codestealer.jpg" alt="Image of green text on a black background.">
+                    </a>
+                </article>
+            </div>
+        </main>
+    </div>
+<footer>
+    <div id="contactsSection">
+        <a href="https://github.com/DivineMayura" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/mayfaucher" target="_blank">LinkedIn</a>
+        <a href="mailto:divineMayura@gmail.com" target="_blank">Email me</a>
+    </div>
+    <div id="finalInfo">
+        <h6 id="footerText">Made with ❤️ May Faucher!</h6>
+    </div>
+    <a href="#wordyName">Top of Page</a>
+</footer> 
 </body>
- 
 </html>
 
 
